@@ -20,6 +20,12 @@ so that a junior analyst can produce work a senior can review in one pass.
 - `templates/valuation-sanity-check.md` — before you publish a target price:
   implied growth, implied margins, peer multiples, downside case, and the
   question "what has to be true for this price to be right?"
+- `templates/data-first-checklist.md` — before any conclusion is written:
+  source, licence, and freshness check; every number with source and
+  period; confirmation before pattern; downside and falsifier.
+- `templates/research-to-use-case.md` — from a finding to a testable
+  proposal: specific use case, evidence gate, and kill criteria written
+  before scoring. Testable, not proven; never a recommendation.
 
 ## The standard this playbook enforces
 
