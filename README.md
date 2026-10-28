@@ -42,6 +42,28 @@ Copy a template into a new file, fill it, delete nothing structural — if a
 section does not apply, write "Not applicable, because…" rather than deleting it.
 A reviewer should be able to see what you considered, not just what you concluded.
 
+## Quick start
+
+1. Copy the template you need from `templates/` into a new file.
+2. Fill it in, deleting nothing structural — if a section does not apply,
+   write "Not applicable, because…" rather than deleting it.
+3. Cite the source of every company number on the same page, and state
+   what would change your conclusion.
+
+## Limitations
+
+- These are blank templates, not completed research: any example filled
+  into a template must be labelled EXAMPLE unless it is verified output,
+  and must cite its source on the same page.
+- A completed template is still one analyst's work, not a verified
+  valuation and not a recommendation.
+- Nothing here is a live data source.
+
+> Research only, not investment advice; never a buy/sell recommendation
+
+See `CONTRIBUTING.md` for how to contribute and `SECURITY.md` for how to
+report a security issue privately.
+
 ## License
 
 MIT for the templates. Company data filled into them remains subject to its
