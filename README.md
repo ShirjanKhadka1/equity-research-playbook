@@ -23,6 +23,8 @@ so that a junior analyst can produce work a senior can review in one pass.
 - `templates/data-first-checklist.md` — before any conclusion is written:
   source, licence, and freshness check; every number with source and
   period; confirmation before pattern; downside and falsifier.
+- `templates/structured-debate.md` — parallel analysts, Bull/Bear debate, risk scenarios, publication gate
+- `templates/ledger-control-checklist.md` — frozen inputs, control totals, cut-off, restatement log
 - `templates/research-to-use-case.md` — from a finding to a testable
   proposal: specific use case, evidence gate, and kill criteria written
   before scoring. Testable, not proven; never a recommendation.
