@@ -83,6 +83,8 @@ template types. Run its tests with:
 python -m pytest tests/ -v
 ```
 
+8 templates, tested by 6/6 tests — generated counts in `status.json` (produced by `scripts/generate_status.py`, checked by `scripts/check_numbers.py`).
+
 What the checker does NOT do: it does not verify sources, arithmetic,
 or valuation logic, and it does not judge whether a filled template is
 a valuation. A file can pass the checker and still be an illustrative
