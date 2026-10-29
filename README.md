@@ -28,6 +28,15 @@ so that a junior analyst can produce work a senior can review in one pass.
 - `templates/research-to-use-case.md` — from a finding to a testable
   proposal: specific use case, evidence gate, and kill criteria written
   before scoring. Testable, not proven; never a recommendation.
+- `examples/bottlers-nepal-terai-initiation-example.md` — a filled
+  initiation report for Bottlers Nepal (Terai) (BNT, NEPSE), built
+  from the verified-inputs ledger of October 2026. Labelled on its
+  first lines as an **illustrative filled template, NOT a valuation**:
+  no DCF, no target price, no rating, no recommendation. Every figure
+  carries its source and period on the page, or is labelled UNKNOWN.
+- `scripts/check_template.py` — a stdlib-only, deterministic
+  template-completeness checker (see below), with tests in
+  `tests/test_check_template.py`.
 
 ## The standard this playbook enforces
 
@@ -51,14 +60,43 @@ A reviewer should be able to see what you considered, not just what you conclude
    write "Not applicable, because…" rather than deleting it.
 3. Cite the source of every company number on the same page, and state
    what would change your conclusion.
+4. Run the checker on your filled file (see below) before sharing it.
+
+## Template-completeness checker (executable verification)
+
+The playbook now has executable verification for template structure —
+not for the truth of any figure:
+
+```sh
+python scripts/check_template.py examples/bottlers-nepal-terai-initiation-example.md
+python scripts/check_template.py my-filled-report.md --template earnings
+python scripts/check_template.py --list-templates
+```
+
+The checker (Python 3.12, stdlib only, no dependencies) reports every
+required section that is missing or present-but-empty, and exits 1 in
+that case; it exits 0 only when all required sections are present with
+content. `--template` defaults to auto-detection across all eight
+template types. Run its tests with:
+
+```sh
+python -m pytest tests/ -v
+```
+
+What the checker does NOT do: it does not verify sources, arithmetic,
+or valuation logic, and it does not judge whether a filled template is
+a valuation. A file can pass the checker and still be an illustrative
+example only — as the Bottlers Nepal (Terai) example is, by its own
+label. Sourcing and valuation honesty remain the author's job.
 
 ## Limitations
 
-- These are blank templates, not completed research: any example filled
-  into a template must be labelled EXAMPLE unless it is verified output,
+- The templates are blank structures; the one filled example is
+  labelled EXAMPLE / illustrative filled template, NOT a valuation,
   and must cite its source on the same page.
 - A completed template is still one analyst's work, not a verified
   valuation and not a recommendation.
+- The checker verifies section structure only, not figure accuracy.
 - Nothing here is a live data source.
 
 > Research only, not investment advice; never a buy/sell recommendation
