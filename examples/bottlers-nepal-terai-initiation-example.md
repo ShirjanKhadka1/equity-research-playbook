@@ -27,6 +27,15 @@ It is not the NYSE ticker BNT, which is a different company.
   annual report (year ended 16 July 2025). This example does not
   re-audit that report; if a figure here conflicts with the report
   itself, the report wins and this page must be corrected.
+- **Single source (Round 3, R7, 29 Oct 2026):**
+  `nepal-market-research/data/bnt-verified-figures.md` — every
+  FY 2081/82 figure on this page was cross-checked against it
+  figure by figure and matches exactly; no numeric mismatch was
+  found. Page reference for every figure: TO VERIFY (no copy of the
+  39th annual report PDF is on file; see that file's verification
+  status). Figures this page omits (D&A, lease liability) are in
+  that file; their absence here is an omission, not a different
+  value.
 - **Business description (secondary):** Bajarko Chirfar (English),
   "Bottlers Nepal's business and income declined, market share also
   decreased", 20 July 2025,
