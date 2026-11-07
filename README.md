@@ -1,3 +1,17 @@
+> **Content moved — this repo is retained for history.**
+>
+> The templates, the Bottlers Nepal (Terai) initiation example, and the
+> template-completeness checker from this repo moved on 7 Nov 2026 to
+> [**finance-research-agents**](https://github.com/ShirjanKhadka1/finance-research-agents)
+> (`templates/`, `examples/`, `scripts/check_template.py`,
+> `tests/test_check_template.py`), with the owner's approval. That pack
+> now holds all 8 templates; the 4 that were already there were
+> byte-identical to this repo's copies, so nothing was duplicated.
+> This repo is **not** deleted, archived, or renamed — everything below
+> stays as the historical record. For new work, use the pack.
+>
+> ---
+
 # Equity Research Playbook
 
 The templates and checklists a research analyst actually uses — initiation,
